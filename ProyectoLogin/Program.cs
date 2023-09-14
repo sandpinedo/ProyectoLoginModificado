@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using ProyectoLogin.Models;
 
+using ProyectoLogin.Servicios.Contrato;
+using ProyectoLogin.Servicios.Implementacion;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,6 +14,8 @@ builder.Services.AddDbContext<DbpruebaContext>(options => {
 
 });
 
+
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
 

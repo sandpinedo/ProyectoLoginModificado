@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using ProyectoLogin.Models;
 using ProyectoLogin.Servicios.Contrato;
 
